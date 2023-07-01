@@ -42,6 +42,8 @@ let activeNote = {};
 
 // GETTTTTT
 const getNotes = () =>
+// {
+//   console.log("GET")
   fetch("/api/notes", {
     method: "GET",
     headers: {
@@ -49,10 +51,15 @@ const getNotes = () =>
     },
   })
     .then((res) => res.json())
-    .then((data) => {
-      console.log("getNOTES() /GET: ALL NOTES =", data);
-      return data;
-    });
+    .then((res) => {
+      console.log("RES", res)
+      return res
+    })
+    // .then((data) => {
+    //   console.log("getNOTES() /GET: ALL NOTES =", data);
+    //   return data;
+    // });
+  // }
 
 
 // GETTTTTT
@@ -65,7 +72,7 @@ const getNotesParams = (id) =>
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log("getNOTES() /GET: ALL NOTES =", data);
+      console.log("getNOTES() /GET/:IDDDD: ALL NOTES =", data);
       return data;
     });
 
@@ -73,7 +80,8 @@ const getNotesParams = (id) =>
 
 
 // POSTTTT
-const saveNote = (note) =>
+const saveNote = (note) => {
+  console.log("NONOENONEONOENOENO", note)
   fetch("/api/notes", {
     method: "POST",
     headers: {
@@ -82,18 +90,17 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   })
     .then((res) => res.json())
-    .then((data) => {
-      console.log("Successful POST request:", data);
+    .then((res) => {
+      console.log("Successful POST request:", res);
 
       // Empty the input fields
       emptyForm();
-      return data;
+      return res;
     })
     .catch((error) => {
       console.error("Error in POST request:", error);
     });
-
-
+  }
 
 
 // DELETE
@@ -103,28 +110,11 @@ const deleteNote = (id) => {
     method: "DELETE",
     // headers: {
     //   "Content-Type": "application/json",
-    // },
-    // body: JSON.stringify(id),
+    // }
   }).then((res) => {
-    console.log("res.json = ",res.json)
-    // res.json
-    if (!res.ok) {
-      throw new Error('Failed to delete note');
-    }
-    console.log('Note deleted successfully')
-  })
-  // }).then((data) => {
-  //     // console.log("DELETED DATA :", data);
-  //     emptyForm();
-  //     const data1 = {
-  //       "title": "HAHHA",
-  //       "text": "asfa",
-  //       "note_id": "d0b4"
-  //     }
-  //     console.log("DELETED DATA :", data1);
-  //     return data1;
-  //   })
-    .catch((err) => {
+    console.log("DELETE FETCH res.json = ",res.json)
+      console.log('Note deleted successfully')
+    }).catch((err) => {
       console.log(err);
     });
 };
@@ -154,8 +144,9 @@ const handleNoteSave = () => {
     title: noteTitle.value, // new post
     text: noteText.value, // new post
   };
-  saveNote(newNote).then(() => {
-    console.log("NEWWWW NOOOTEE = ", newNote);
+  saveNote(newNote)
+  .then(() => {
+    console.log("handleNoteSave() saveNote = ", newNote);
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -176,24 +167,31 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;// icon delete
-  console.log(note)
+
+  // console.log('handleNoteDelete() element clicked=',note) //<i class="fas fa-trash-alt float-right text-danger delete-note"></i>
+
   const noteId = JSON.parse(
     note.parentElement.getAttribute("data-note")
   ).note_id;
-  console.log("noteId  DELETE ", noteId); // note id -> d0b4
-  console.log("ACTIVE NOTE  DELEYE ", activeNote.note_id); // ACTIVEnote id -> d0b4
+
+
+  console.log("handleNoteDelete() = noteId  DELETE = ", noteId); // note id -> d0b4
+  console.log("ACTIVE NOTE  DELETE ", activeNote.note_id); // ACTIVEnote id -> d0b4
   console.log(activeNote.note_id === noteId)
+
+
   if (activeNote.note_id === noteId) {
     activeNote = {};
   }
   
-  // deleteNote(noteId)
 
+  // deleteNote(noteId)
   // const newNote = {
   //   title: noteTitle.value, // new post
   //   text: noteText.value, // new post
   //   note_id:
   // };
+
 
   deleteNote(noteId)
     .then(() => {
@@ -294,7 +292,7 @@ const renderNoteList = async (notes) => {
     li.dataset.note = JSON.stringify(note);
 
     noteListItems.push(li);
-    // console.log("noteListItems = ",noteListItems)
+    console.log("noteListItems = ",noteListItems)
   });
 
   if (window.location.pathname === "/notes") {
@@ -303,15 +301,9 @@ const renderNoteList = async (notes) => {
 };
 
 // Gets notes from the db and renders them to the sidebar
-// getNotes = {json}
+// const getAndRenderNotes = () => getNotes().then((data)=>renderNoteList(data));
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
-// const getAndRenderNotes = () => {
-//                               // console.log("data = ",getNotes())
-//                               getNotes().then((response)=>{
-//                               console.log("response = ",response)
-//                                 response.forEach((i)=>renderNoteList(i))
-//                               })}
 
 if (window.location.pathname === "/notes") {
   saveNoteBtn.addEventListener("click", handleNoteSave);
