@@ -7,10 +7,10 @@
 <h1 align="center">Notes Taking App with Express.js,router 👋</h1>
   
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/divyakrishnan15/nodejs_svg_creation" />
-    <img src="https://img.shields.io/github/languages/top/divyakrishnan15/nodejs_svg_creation"  />
-    <img src="https://img.shields.io/github/issues/divyakrishnan15/nodejs_svg_creation" />
-    <img src="https://img.shields.io/github/last-commit/divyakrishnan15/nodejs_svg_creation" >
+    <img src="https://img.shields.io/github/repo-size/divyakrishnan15/expressjs_notes_app" />
+    <img src="https://img.shields.io/github/languages/top/divyakrishnan15/expressjs_notes_app"  />
+    <img src="https://img.shields.io/github/issues/divyakrishnan15/expressjs_notes_app" />
+    <img src="https://img.shields.io/github/last-commit/divyakrishnan15/expressjs_notes_app" >
     <a href="https://github.com/divyakrishnan15"><img src="https://img.shields.io/github/followers/divyakrishnan15?style=social" target="_blank" /></a
 </p>
   
@@ -62,7 +62,7 @@
  
     | Github Username  | **Email id** | **Github Repo link** | **Deployed Url** | **Contributor** |
     | --- | --- | --- | --- | --- |
-    | [divyakrishnan15](https://github.com/divyakrishnan15) | divya@gmail.com | [Note App](https://github.com/divyakrishnan15/nodejs_svg_creation/) | [Note App](https://divyakrishnan15.github.io/nodejs_svg_creation//) | Sole Contributor |
+    | [divyakrishnan15](https://github.com/divyakrishnan15) | divya@gmail.com | [Note App](https://github.com/divyakrishnan15/expressjs_notes_app/) | [Note App](https://divyakrishnan15.github.io/expressjs_notes_app//) | Sole Contributor |
 
  ## Installation :  
  <a name="Installation"></a> 
