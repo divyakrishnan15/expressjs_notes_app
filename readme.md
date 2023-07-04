@@ -64,7 +64,7 @@
  
     | Github Username  | **Email id** | **Github Repo link** | **Deployed Url** | **Contributor** |
     | --- | --- | --- | --- | --- |
-    | [divyakrishnan15](https://github.com/divyakrishnan15) | divya@gmail.com | [Note App](https://github.com/divyakrishnan15/expressjs_notes_app/) | [Note App](https://divyakrishnan15.github.io/expressjs_notes_app//) | Sole Contributor |
+    | [divyakrishnan15](https://github.com/divyakrishnan15) | divya@gmail.com | [Note App](https://github.com/divyakrishnan15/expressjs_notes_app/) | [Note App](https://note-app-expressjs-f18c4a4f9a16.herokuapp.com/) | Sole Contributor |
 
  ## Installation :  
  <a name="Installation"></a> 
@@ -114,6 +114,25 @@ npm i
  
  ## Screenshot : 
  <a name="screenshot"></a> 
+
+  ![image](https://github.com/divyakrishnan15/expressjs_notes_app/assets/40469923/c7c70464-4558-4a04-bdfe-a5521a02f616)
+
+ See an existing note:
+  ![image](https://github.com/divyakrishnan15/expressjs_notes_app/assets/40469923/68a6f4ad-3e93-4930-9b6d-1de2838ad61a)
+
+  Add a new note:
+  ![image](https://github.com/divyakrishnan15/expressjs_notes_app/assets/40469923/dbc9590d-c602-4ad7-959b-848fb19f223d)
+  ![image](https://github.com/divyakrishnan15/expressjs_notes_app/assets/40469923/25b30c94-e2cd-40e8-bfb9-3cb24b08b194)
+
+
+  Delete a note:
+  ![image](https://github.com/divyakrishnan15/expressjs_notes_app/assets/40469923/8ad2bd16-36e4-4158-b406-e215836dfee8)
+
+
+  
+
+
+
 
 
  #### Copyright © 2023, Divya Krishnan. Released under the [MIT License](https://choosealicense.com/licenses/mit/).
