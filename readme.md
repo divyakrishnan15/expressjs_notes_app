@@ -50,7 +50,7 @@
  
  ## Description :  
  <a name="Description"></a>  
-    1.When I open the Note Taker, landing page with a link to a notes page is displayed.
+    1.When I open the Note Taker, landing page with a link to a notes page is displayed
     2.When I click on the link to the notes page, a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
     3.When I enter a new note title and the note’s text, a Save icon appears in the navigation at the top of the page
     4.When I click on the Save icon, the new note I have entered is saved and appears in the left-hand column with the other existing notes
