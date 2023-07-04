@@ -62,7 +62,7 @@
  
     | Github Username  | **Email id** | **Github Repo link** | **Deployed Url** | **Contributor** |
     | --- | --- | --- | --- | --- |
-    | [divyakrishnan15](https://github.com/divyakrishnan15) | divya@gmail.com | [SVG logo](https://github.com/divyakrishnan15/nodejs_svg_creation/) | [SVG logo](https://divyakrishnan15.github.io/nodejs_svg_creation//) | Sole Contributor |
+    | [divyakrishnan15](https://github.com/divyakrishnan15) | divya@gmail.com | [Note App](https://github.com/divyakrishnan15/nodejs_svg_creation/) | [Note App](https://divyakrishnan15.github.io/nodejs_svg_creation//) | Sole Contributor |
 
  ## Installation :  
  <a name="Installation"></a> 
@@ -91,18 +91,12 @@ npm i
  <a name="Usage"></a> 
  Download the code to your local. 
  Perform **npm i** to install all the packages. 
- Answer the questions asked in the command prompt like(
-   1. svg shape
-   2. shape color
-   3. text inside svg
-   4. text color
-   5. do you need animation?
-   6. if yes select the animation
+ 
  
    
  ## Watchme Video- (click on the video to play) : 
  <a name="Video"></a> 
- [![Watch the video](https://img.youtube.com/vi/IDsxM5c4ays/maxresdefault.jpg)](https://youtu.be/IDsxM5c4ays)
+ N/A
 
  ## Contribution :  
  <a name="License"></a> 
