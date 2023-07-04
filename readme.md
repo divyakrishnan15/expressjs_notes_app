@@ -42,9 +42,11 @@
 
         7.  [License](#License) 
 
-        8. [Tests](#Tests) 
+        8. [Tests](#Tests)
+   
+        9. [Contributor](#Contributor) 
 
-        9. [Screenshot](#screenshot) 
+        10. [Screenshot](#screenshot) 
  
  ## Description :  
  <a name="Description"></a>  
@@ -105,6 +107,11 @@ npm i
  ## Tests :
  <a name="Tests"></a> 
  There are no test for this app but in future we have planned to add the test with JEST.
+
+ ## Contributor :
+ <a name="Contributor"></a> 
+ Sole Contributor
+ 
  ## Screenshot : 
  <a name="screenshot"></a> 
 
